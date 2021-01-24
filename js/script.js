@@ -64,7 +64,6 @@ nameOfCats(cats);
 
 //Question 8
 
-
 function createCats(cats) {
   let catData = "";
 
@@ -79,8 +78,6 @@ function createCats(cats) {
     <h5> ${cats[i].name} </h5>
     <p> ${catAge} </p>
     </div>`;
-
-    //const finalHtml = catData
   }
   return catData;
 }
@@ -89,29 +86,3 @@ const newHtml = createCats(cats);
 
 const container = document.querySelector(".cat-container");
 container.innerHTML = newHtml;
-
-/*function createCats(cats) {
-  let catData = "";
-
-  for (let i = 0; i < cats.length; i++) {
-    let catAge = "Age unknown";
-
-    if (cats[i].age) {
-      catAge = cats[i].age;
-    }
-
-    catData += `
-    <h5> ${cats[i].name} </h5>
-    <p> ${catAge} </p>
-    `;
-  }
-
-  const catHtml = `<div> ${catData} </div>`;
-  return catHtml;
-}
-
-const newHtml = createCats(cats);
-
-const catsContainer = document.querySelector(".cat-container");
-catsContainer.innerHTML = newHtml;
-*/
